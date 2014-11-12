@@ -3,27 +3,49 @@
 <section id="portfolio" ng-controller="RecipeListCtrl">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Search"  ng-model="searchText">
+            </div>
+            <div class="col-md-4 text-center">
                 <h2>Recipes</h2>
                 <hr class="star-primary">
             </div>
-            <div class="row">
-
-                {% raw  %}
-                <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes">
-                    <div class="rider_card">
-                            
-                            <div class="">
-                                <img src="{{recipe.imageUrlsBySize.90}}">
-                                <p></p>
-                                <h3>{{recipe.recipeName}}</h3>
-                            </div>
-
-                        </a>
-                    </div>
+            <div class="col-md-4 ">
+                <div class="btn-group pull-right" data-toggle="buttons">
+                  
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Chicken
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Beef
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off"> Pork
+                  </label>
+                  <label class="btn btn-primary ">
+                    <input type="checkbox" autocomplete="off" > Seafood 
+                  </label>
+                 
                 </div>
-                {% endraw  %}
             </div>
         </div>
+        <div class="row">
+
+            {% raw  %}
+            <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes | filter:searchText">
+                <div class="rider_card">
+                        
+                        <div class="">
+                            <img src="{{recipe.imageUrlsBySize.90}}">
+                            <p class="pull-right">{{recipe.rating}}</p>
+                            <h3>{{recipe.recipeName}}</h3>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            {% endraw  %}
+        </div>
+        
     </div>
 </section>

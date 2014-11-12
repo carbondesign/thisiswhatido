@@ -3,7 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+/*helper classes*/
 
+.margin_b40{margin-bottom: 40px}
+.margin_l10{margin-left: 10px}
 body {
     overflow-x: hidden;
     /*background: url(../img/bobs.jpg);*/
@@ -461,3 +464,4 @@ footer .footer-below {
 }
 .rider_card h3{font-size: 1.2em; clear:both;margin-top: 10px}
 .rider_card p{font-size: 1em; margin-left: 10px}
+

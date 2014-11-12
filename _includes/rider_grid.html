@@ -2,15 +2,12 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row margin_b40">
+            <div class="col-md-3">
                 <input type="text" class="form-control" placeholder="Search">
             </div>
-            <div class="col-md-4 text-center">
-                <h2>Riders</h2>
-                <hr class="star-primary">
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
+            <div class="col-md-2 col-md-offset-1">
                 <div class="dropdown pull-right">
                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     Sort by
@@ -24,6 +21,11 @@
                   </ul>
                 </div>
             </div>
+            <div class="col-md-12 text-center">
+                <p>Pick the top five riders in order and win a bottle of Bonanza Bob's Best BBQ Sauce!</p>
+                
+            </div>
+            
         </div>
         <div class="row">
             {% for rider in site.data.riders %}
