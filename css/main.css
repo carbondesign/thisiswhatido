@@ -484,6 +484,11 @@ footer .footer-below {
     height: 30px;
     width: 28px;
 }
+.rank.selected, .rank.selected:hover{
+    color:#666;
+    border-color:#666;
+}
+
 .rank_list{
     margin-left: -13px;
     margin-top: 5px;
