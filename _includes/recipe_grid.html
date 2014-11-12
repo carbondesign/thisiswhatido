@@ -3,8 +3,19 @@
 <section id="portfolio" ng-controller="RecipeListCtrl">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <input type="text" class="form-control" placeholder="Search"  ng-model="searchText">
+            <div class="col-md-4 search_cont">
+                <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
+                <div class="dropdown pull-left">
+                  <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Sort by
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rating</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Flavors</a></li>
+                    
+                  </ul>
+                </div>
             </div>
             <div class="col-md-4 text-center">
                 <h2>Recipes</h2>
@@ -32,7 +43,7 @@
         <div class="row">
 
             {% raw  %}
-            <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes | filter:searchText">
+            <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes | filter:matchesQuery">
                 <div class="rider_card">
                         
                         <div class="">

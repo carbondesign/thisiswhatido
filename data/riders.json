@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "Sam WILLOUGHBY",
+    "nation": "Australia",
+    "age": 23,
+    "points": 1300
+  },
+  {
+    "name": "Connor FIELDS",
+    "nation": "United States",
+    "age": 22,
+    "points": 1115
+  },
+  {
+    "name": "Anthony DEAN",
+    "nation": "Australia",
+    "age": 23,
+    "points": 1075
+  },
+  {
+    "name": "Corben SHARRAH",
+    "nation": "United States",
+    "age": 22,
+    "points": 1053
+  },
+  {
+    "name": "Joris DAUDET",
+    "nation": "France",
+    "age": 23,
+    "points": 1045
+  },
+  {
+    "name": "Maris STROMBERGS",
+    "nation": "Latvia",
+    "age": 27,
+    "points": 1025
+  },
+  {
+    "name": "Tory NYHAUG",
+    "nation": "Canada",
+    "age": 22,
+    "points": 1015
+  },
+  {
+    "name": "Renato REZENDE",
+    "nation": "Brazil",
+    "age": 23,
+    "points": 1005
+  },
+  {
+    "name": "Liam PHILLIPS",
+    "nation": "Great Britain",
+    "age": 25,
+    "points": 965
+  },
+  {
+    "name": "Twan VAN GENDT",
+    "nation": "Netherlands",
+    "age": 22,
+    "points": 865
+  },
+  {
+    "name": "Jelle VAN GORKOM",
+    "nation": "Netherlands",
+    "age": 23,
+    "points": 855
+  },
+  {
+    "name": "Edzus TREIMANIS",
+    "nation": "Latvia",
+    "age": 26,
+    "points": 800
+  },
+  {
+    "name": "David HERMAN",
+    "nation": "United States",
+    "age": 26,
+    "points": 768
+  },
+  {
+    "name": "Kyle EVANS",
+    "nation": "Great Britain",
+    "age": 21,
+    "points": 738
+  },
+  {
+    "name": "Carlos Alberto RAMIREZ YEPES",
+    "nation": "Colombia",
+    "age": 20,
+    "points": 720
+  },
+  {
+    "name": "Jared GARCIA",
+    "nation": "United States",
+    "age": 22,
+    "points": 715
+  },
+  {
+    "name": "Sylvain ANDRE",
+    "nation": "France",
+    "age": 22,
+    "points": 675
+  },
+  {
+    "name": "Nicholas LONG",
+    "nation": "United States",
+    "age": 25,
+    "points": 674
+  },
+  {
+    "name": "Bodi TURNER",
+    "nation": "Australia",
+    "age": 20,
+    "points": 670
+  },
+  {
+    "name": "Carlos Mario OQUENDO ZABALA",
+    "nation": "Colombia",
+    "age": 27,
+    "points": 640
+  },
+  {
+    "name": "Barry NOBLES",
+    "nation": "United States",
+    "age": 28,
+    "points": 628
+  },
+  {
+    "name": "Yoshitaku NAGASAKO",
+    "nation": "Japan",
+    "age": 21,
+    "points": 610
+  },
+  {
+    "name": "Tre WHYTE",
+    "nation": "Great Britain",
+    "age": 21,
+    "points": 536
+  },
+  {
+    "name": "Raymon VAN DER BIEZEN",
+    "nation": "Netherlands",
+    "age": 27,
+    "points": 524
+  },
+  {
+    "name": "Vincent PELLUARD",
+    "nation": "France",
+    "age": 24,
+    "points": 495
+  },
+  {
+    "name": "Justin POSEY",
+    "nation": "United States",
+    "age": 21,
+    "points": 491
+  },
+  {
+    "name": "Martijn JASPERS",
+    "nation": "Netherlands",
+    "age": 27,
+    "points": 489
+  },
+  {
+    "name": "Steven CISAR",
+    "nation": "United States",
+    "age": 28,
+    "points": 485
+  },
+  {
+    "name": "Federico VILLEGAS",
+    "nation": "Argentina",
+    "age": 20,
+    "points": 470
+  },
+  {
+    "name": "Quentin CALEYRON",
+    "nation": "France",
+    "age": 26,
+    "points": 465
+  },
+  {
+    "name": "Romain RICCARDI",
+    "nation": "Italy",
+    "age": 26,
+    "points": 455
+  },
+  {
+    "name": "Marc WILLERS",
+    "nation": "New Zealand",
+    "age": 29,
+    "points": 454
+  },
+  {
+    "name": "Damien GODET",
+    "nation": "France",
+    "age": 28,
+    "points": 435
+  },
+  {
+    "name": "Rogerio DOS REIS",
+    "nation": "Brazil",
+    "age": 22,
+    "points": 384
+  },
+  {
+    "name": "Evgeny KLESHCHENKO",
+    "nation": "Russia",
+    "age": 22,
+    "points": 380
+  },
+  {
+    "name": "Ramiro MARINO CARLOMAGNO",
+    "nation": "Argentina",
+    "age": 26,
+    "points": 373
+  },
+  {
+    "name": "Renaud BLANC",
+    "nation": "Switzerland",
+    "age": 23,
+    "points": 365
+  },
+  {
+    "name": "Kurt PICKARD",
+    "nation": "New Zealand",
+    "age": 23,
+    "points": 352
+  },
+  {
+    "name": "Trent JONES",
+    "nation": "New Zealand",
+    "age": 20,
+    "points": 350
+  },
+  {
+    "name": "James BROWN",
+    "nation": "Canada",
+    "age": 25,
+    "points": 345
+  },
+  {
+    "name": "Matthew JUSTER",
+    "nation": "Australia",
+    "age": 24,
+    "points": 345
+  },
+  {
+    "name": "Amidou MIR",
+    "nation": "France",
+    "age": 19,
+    "points": 344
+  },
+  {
+    "name": "Evgeny KOMAROV",
+    "nation": "Russia",
+    "age": 26,
+    "points": 326
+  },
+  {
+    "name": "Gonzalo MOLINA",
+    "nation": "Argentina",
+    "age": 19,
+    "points": 320
+  },
+  {
+    "name": "Corey FRIESWYK",
+    "nation": "Australia",
+    "age": 20,
+    "points": 316
+  },
+  {
+    "name": "Rihards VEIDE",
+    "nation": "Latvia",
+    "age": 23,
+    "points": 310
+  },
+  {
+    "name": "Axel LE NAGARD",
+    "nation": "France",
+    "age": 20,
+    "points": 309
+  },
+  {
+    "name": "Tatsumi MATSUSHITA",
+    "nation": "Japan",
+    "age": 23,
+    "points": 300
+  },
+  {
+    "name": "Alfredo CAMPO",
+    "nation": "Ecuador",
+    "age": 21,
+    "points": 286
+  },
+  {
+    "name": "Emilio Andres FALLA BUCHELY",
+    "nation": "Ecuador",
+    "age": 28,
+    "points": 278
+  },
+  {
+    "name": "Sergio Ignacio SALAZAR LOPEZ",
+    "nation": "Colombia",
+    "age": 28,
+    "points": 270
+  },
+  {
+    "name": "Romain MAYET",
+    "nation": "France",
+    "age": 21,
+    "points": 270
+  },
+  {
+    "name": "Miguel DIXINI VILELA",
+    "nation": "Brazil",
+    "age": 20,
+    "points": 262
+  },
+  {
+    "name": "Thomas DOUCET",
+    "nation": "France",
+    "age": 21,
+    "points": 251
+  },
+  {
+    "name": "Joris HARMSEN",
+    "nation": "Netherlands",
+    "age": 22,
+    "points": 231
+  },
+  {
+    "name": "Simon DUCHENE",
+    "nation": "France",
+    "age": 26,
+    "points": 229
+  },
+  {
+    "name": "Andres Eduardo JIMENEZ CAICEDO",
+    "nation": "Colombia",
+    "age": 28,
+    "points": 225
+  },
+  {
+    "name": "Joshua CALLAN",
+    "nation": "Australia",
+    "age": 23,
+    "points": 212
+  },
+  {
+    "name": "James PALMER",
+    "nation": "Canada",
+    "age": 20,
+    "points": 210
+  },
+  {
+    "name": "Jordy VAN DER HEIJDEN",
+    "nation": "Netherlands",
+    "age": 26,
+    "points": 209
+  },
+  {
+    "name": "David GRAF",
+    "nation": "Switzerland",
+    "age": 25,
+    "points": 200
+  },
+  {
+    "name": "Romain MAHIEU",
+    "nation": "France",
+    "age": 19,
+    "points": 186
+  },
+  {
+    "name": "Luis BRETHAUER",
+    "nation": "Germany",
+    "age": 22,
+    "points": 185
+  },
+  {
+    "name": "Leandro DAL FARRA MIRANDA",
+    "nation": "Brazil",
+    "age": 22,
+    "points": 185
+  },
+  {
+    "name": "Jorge Geovanny ROURA BARZALLO",
+    "nation": "Ecuador",
+    "age": 19,
+    "points": 176
+  },
+  {
+    "name": "Mischa PARTRIDGE",
+    "nation": "Canada",
+    "age": 26,
+    "points": 176
+  },
+  {
+    "name": "Cesar MONTENEGRO",
+    "nation": "Argentina",
+    "age": 22,
+    "points": 170
+  },
+  {
+    "name": "Fabricio Miguel MATURANO",
+    "nation": "Argentina",
+    "age": 33,
+    "points": 169
+  },
+  {
+    "name": "Joey BERTHIAUME",
+    "nation": "United States",
+    "age": 26,
+    "points": 167
+  },
+  {
+    "name": "Luke MADILL",
+    "nation": "Australia",
+    "age": 34,
+    "points": 166
+  },
+  {
+    "name": "Panyapon SORNKLA",
+    "nation": "Thailand",
+    "age": 22,
+    "points": 161
+  },
+  {
+    "name": "Matthew CAMERON",
+    "nation": "New Zealand",
+    "age": 29,
+    "points": 160
+  },
+  {
+    "name": "Jukia YOSHIMURA",
+    "nation": "Japan",
+    "age": 21,
+    "points": 160
+  },
+  {
+    "name": "Miguel Alejandro CALIXTO LOPEZ",
+    "nation": "Colombia",
+    "age": 20,
+    "points": 153
+  },
+  {
+    "name": "Jukrapech WICHANA",
+    "nation": "Thailand",
+    "age": 22,
+    "points": 150
+  },
+  {
+    "name": "Tanner SEBESTA",
+    "nation": "United States",
+    "age": 21,
+    "points": 149
+  },
+  {
+    "name": "Alexander CAMERON",
+    "nation": "Australia",
+    "age": 27,
+    "points": 148
+  },
+  {
+    "name": "Sergey DEMKIN",
+    "nation": "Russia",
+    "age": 25,
+    "points": 141
+  },
+  {
+    "name": "Julien GODET",
+    "nation": "France",
+    "age": 25,
+    "points": 140
+  },
+  {
+    "name": "Donny ROBINSON",
+    "nation": "United States",
+    "age": 31,
+    "points": 136
+  },
+  {
+    "name": "Caroline BUCHANAN",
+    "nation": "Australia",
+    "age": 24,
+    "points": 1570
+  },
+  {
+    "name": "Mariana PAJON",
+    "nation": "Colombia",
+    "age": 23,
+    "points": 1560
+  },
+  {
+    "name": "Laura SMULDERS",
+    "nation": "Netherlands",
+    "age": 21,
+    "points": 1460
+  },
+  {
+    "name": "Brooke CRAIN",
+    "nation": "United States",
+    "age": 21,
+    "points": 1225
+  },
+  {
+    "name": "Stefany HERNANDEZ",
+    "nation": "Venezuela",
+    "age": 23,
+    "points": 1115
+  },
+  {
+    "name": "Manon VALENTINO",
+    "nation": "France",
+    "age": 24,
+    "points": 1110
+  },
+  {
+    "name": "Felicia STANCIL",
+    "nation": "United States",
+    "age": 19,
+    "points": 1100
+  },
+  {
+    "name": "Alise POST",
+    "nation": "United States",
+    "age": 23,
+    "points": 1045
+  },
+  {
+    "name": "Simone CHRISTENSEN",
+    "nation": "Denmark",
+    "age": 20,
+    "points": 965
+  },
+  {
+    "name": "Dani GEORGE",
+    "nation": "United States",
+    "age": 20,
+    "points": 935
+  },
+  {
+    "name": "Elke VANHOOF",
+    "nation": "Belgium",
+    "age": 23,
+    "points": 900
+  },
+  {
+    "name": "Lauren REYNOLDS",
+    "nation": "Australia",
+    "age": 23,
+    "points": 806
+  },
+  {
+    "name": "Melinda MCLEOD",
+    "nation": "Australia",
+    "age": 21,
+    "points": 780
+  },
+  {
+    "name": "Merle VAN BENTHEM",
+    "nation": "Netherlands",
+    "age": 22,
+    "points": 778
+  },
+  {
+    "name": "Amanda CARR",
+    "nation": "Thailand",
+    "age": 24,
+    "points": 770
+  },
+  {
+    "name": "Magalie POTTIER",
+    "nation": "France",
+    "age": 25,
+    "points": 765
+  },
+  {
+    "name": "Aneta HLADIKOVA",
+    "nation": "Czech Republic",
+    "age": 30,
+    "points": 712
+  },
+  {
+    "name": "Natalia SUVOROVA",
+    "nation": "Russia",
+    "age": 19,
+    "points": 690
+  },
+  {
+    "name": "Priscilla STEVAUX CARNAVAL",
+    "nation": "Brazil",
+    "age": 21,
+    "points": 615
+  },
+  {
+    "name": "Vilma RIMSAITE",
+    "nation": "Lithuania",
+    "age": 31,
+    "points": 600
+  },
+  {
+    "name": "Sarah WALKER",
+    "nation": "New Zealand",
+    "age": 26,
+    "points": 590
+  },
+  {
+    "name": "Eva AILLOUD",
+    "nation": "France",
+    "age": 24,
+    "points": 585
+  },
+  {
+    "name": "Bianca QUINALHA",
+    "nation": "Brazil",
+    "age": 21,
+    "points": 575
+  },
+  {
+    "name": "Nadja PRIES",
+    "nation": "Germany",
+    "age": 20,
+    "points": 543
+  },
+  {
+    "name": "Maria Gabriela DIAZ",
+    "nation": "Argentina",
+    "age": 33,
+    "points": 483
+  },
+  {
+    "name": "Rachel JONES",
+    "nation": "Australia",
+    "age": 19,
+    "points": 465
+  },
+  {
+    "name": "Mariana DIAZ",
+    "nation": "Argentina",
+    "age": 22,
+    "points": 445
+  },
+  {
+    "name": "Camille MAIRE",
+    "nation": "France",
+    "age": 20,
+    "points": 406
+  },
+  {
+    "name": "Amelia WALSH",
+    "nation": "Canada",
+    "age": 22,
+    "points": 400
+  },
+  {
+    "name": "Thaynara MOROSINI CHAVES",
+    "nation": "Brazil",
+    "age": 19,
+    "points": 370
+  },
+  {
+    "name": "Teagan O'KEEFFE",
+    "nation": "South Africa",
+    "age": 22,
+    "points": 358
+  },
+  {
+    "name": "Kirsten DELLAR",
+    "nation": "Australia",
+    "age": 22,
+    "points": 350
+  },
+  {
+    "name": "Dana SPRENGERS",
+    "nation": "Netherlands",
+    "age": 24,
+    "points": 341
+  },
+  {
+    "name": "Charlotte GREEN",
+    "nation": "Great Britain",
+    "age": 20,
+    "points": 334
+  },
+  {
+    "name": "Lieke KLAUS",
+    "nation": "Netherlands",
+    "age": 25,
+    "points": 333
+  },
+  {
+    "name": "Pauline CORLOBE",
+    "nation": "France",
+    "age": 22,
+    "points": 305
+  },
+  {
+    "name": "Eliane McADAM",
+    "nation": "Canada",
+    "age": 19,
+    "points": 280
+  },
+  {
+    "name": "Shelby STACY",
+    "nation": "United States",
+    "age": 20,
+    "points": 277
+  },
+  {
+    "name": "Maria Angel ESPINOZA",
+    "nation": "Ecuador",
+    "age": 20,
+    "points": 260
+  },
+  {
+    "name": "Florencia Ayelen SORIANO",
+    "nation": "Argentina",
+    "age": 21,
+    "points": 250
+  },
+  {
+    "name": "Dirk WINTER",
+    "nation": "Australia",
+    "age": 24,
+    "points": 128
+  },
+  {
+    "name": "Blake MOORE",
+    "nation": "Australia",
+    "age": 19,
+    "points": 127
+  },
+  {
+    "name": "Brandon REID",
+    "nation": "Canada",
+    "age": 20,
+    "points": 118
+  },
+  {
+    "name": "Glenn VAN DE WETERING",
+    "nation": "Netherlands",
+    "age": 23,
+    "points": 113
+  },
+  {
+    "name": "Yvan LAPRAZ",
+    "nation": "Switzerland",
+    "age": 25,
+    "points": 112
+  },
+  {
+    "name": "Klaus Bogh ANDRESEN",
+    "nation": "Denmark",
+    "age": 27,
+    "points": 110
+  },
+  {
+    "name": "Fredy FAJARDO ORTIZ",
+    "nation": "Colombia",
+    "age": 21,
+    "points": 110
+  },
+  {
+    "name": "Remi RICCARDI",
+    "nation": "France",
+    "age": 25,
+    "points": 108
+  },
+  {
+    "name": "Sifiso NHLAPO",
+    "nation": "South Africa",
+    "age": 27,
+    "points": 105
+  },
+  {
+    "name": "Hugo VASCONCELOS OSTETI",
+    "nation": "Brazil",
+    "age": 21,
+    "points": 104
+  },
+  {
+    "name": "Tony SYARIFUDIN",
+    "nation": "Indonesia",
+    "age": 23,
+    "points": 103
+  },
+  {
+    "name": "Ivo VAN DER PUTTEN",
+    "nation": "Netherlands",
+    "age": 28,
+    "points": 100
+  },
+  {
+    "name": "Corey WALSH",
+    "nation": "Canada",
+    "age": 20,
+    "points": 100
+  },
+  {
+    "name": "Sebastian MENDEZ",
+    "nation": "Chile",
+    "age": 22,
+    "points": 96
+  },
+  {
+    "name": "Bence BUJAKI",
+    "nation": "Hungary",
+    "age": 21,
+    "points": 95
+  },
+  {
+    "name": "Logan COLLINS",
+    "nation": "United States",
+    "age": 24,
+    "points": 94
+  },
+  {
+    "name": "Artem BOYAROV",
+    "nation": "Russia",
+    "age": 19,
+    "points": 93
+  },
+  {
+    "name": "Sergio MILLAS",
+    "nation": "Chile",
+    "age": 25,
+    "points": 92
+  },
+  {
+    "name": "Nicolas PALACIOS MUNOZ",
+    "nation": "Ecuador",
+    "age": 21,
+    "points": 90
+  },
+  {
+    "name": "Riley STAIR",
+    "nation": "United States",
+    "age": 23,
+    "points": 90
+  },
+  {
+    "name": "Maik BAIER",
+    "nation": "Germany",
+    "age": 25,
+    "points": 89
+  },
+  {
+    "name": "Lucas Alfredo BUSTOS",
+    "nation": "Argentina",
+    "age": 21,
+    "points": 88
+  },
+  {
+    "name": "Elias AGUIRRE",
+    "nation": "Chile",
+    "age": 22,
+    "points": 86
+  },
+  {
+    "name": "Kory COOK",
+    "nation": "United States",
+    "age": 25,
+    "points": 84
+  },
+  {
+    "name": "Lorin MARTINEZ",
+    "nation": "France",
+    "age": 22,
+    "points": 84
+  },
+  {
+    "name": "Kohei YOSHII",
+    "nation": "Japan",
+    "age": 19,
+    "points": 82
+  },
+  {
+    "name": "Takamasa SAMPEI",
+    "nation": "Japan",
+    "age": 22,
+    "points": 81
+  },
+  {
+    "name": "Thomas ZULA",
+    "nation": "United States",
+    "age": 22,
+    "points": 80
+  },
+  {
+    "name": "Jose Miguel CONCHA",
+    "nation": "Chile",
+    "age": 25,
+    "points": 80
+  },
+  {
+    "name": "Muhammad Elmi JUMARI",
+    "nation": "Malaysia",
+    "age": 24,
+    "points": 78
+  },
+  {
+    "name": "Martin HELLEVIK",
+    "nation": "Norway",
+    "age": 22,
+    "points": 76
+  },
+  {
+    "name": "Boris PONOMAREV",
+    "nation": "Russia",
+    "age": 19,
+    "points": 76
+  },
+  {
+    "name": "Jeremy RENCUREL",
+    "nation": "France",
+    "age": 19,
+    "points": 72
+  },
+  {
+    "name": "Vladimir BURLEVICH",
+    "nation": "Russia",
+    "age": 24,
+    "points": 70
+  },
+  {
+    "name": "Moana MOO CAILLE",
+    "nation": "France",
+    "age": 26,
+    "points": 70
+  },
+  {
+    "name": "Jeremy ROMMEL",
+    "nation": "United States",
+    "age": 22,
+    "points": 65
+  },
+  {
+    "name": "Jonathan SUAREZ",
+    "nation": "Venezuela",
+    "age": 32,
+    "points": 65
+  },
+  {
+    "name": "Jacob PEEBLES",
+    "nation": "United States",
+    "age": 24,
+    "points": 64
+  },
+  {
+    "name": "Martijn SCHERPEN",
+    "nation": "Netherlands",
+    "age": 26,
+    "points": 64
+  },
+  {
+    "name": "Pavel MALYSHENKOV",
+    "nation": "Russia",
+    "age": 20,
+    "points": 64
+  },
+  {
+    "name": "Shanaze READE",
+    "nation": "Great Britain",
+    "age": 26,
+    "points": 245
+  },
+  {
+    "name": "Dominique DANIELS",
+    "nation": "Puerto Rico",
+    "age": 22,
+    "points": 230
+  },
+  {
+    "name": "Judy BAAUW",
+    "nation": "Netherlands",
+    "age": 20,
+    "points": 224
+  },
+  {
+    "name": "Romana LABOUNKOVA",
+    "nation": "Czech Republic",
+    "age": 25,
+    "points": 210
+  },
+  {
+    "name": "Maria FROLOVA",
+    "nation": "Russia",
+    "age": 21,
+    "points": 205
+  },
+  {
+    "name": "Ekaterina KOMNATOVA",
+    "nation": "Russia",
+    "age": 24,
+    "points": 198
+  },
+  {
+    "name": "Amanda GEVING",
+    "nation": "United States",
+    "age": 25,
+    "points": 195
+  },
+  {
+    "name": "Sandra ALEKSEJEVA",
+    "nation": "Latvia",
+    "age": 23,
+    "points": 194
+  },
+  {
+    "name": "Estefania MANTILLA",
+    "nation": "Ecuador",
+    "age": 25,
+    "points": 191
+  },
+  {
+    "name": "Marina SHAMAHINA",
+    "nation": "Russia",
+    "age": 20,
+    "points": 180
+  },
+  {
+    "name": "Alaina HENDERSON",
+    "nation": "United States",
+    "age": 22,
+    "points": 179
+  },
+  {
+    "name": "Sarah HARVEY",
+    "nation": "Australia",
+    "age": 19,
+    "points": 170
+  },
+  {
+    "name": "Belen TAPIA",
+    "nation": "Chile",
+    "age": 24,
+    "points": 163
+  },
+  {
+    "name": "Elisaveta LYSENKO",
+    "nation": "Russia",
+    "age": 19,
+    "points": 162
+  },
+  {
+    "name": "Mélanie BOUDOUX",
+    "nation": "France",
+    "age": 34,
+    "points": 161
+  },
+  {
+    "name": "Jacinta PINK",
+    "nation": "Australia",
+    "age": 19,
+    "points": 154
+  },
+  {
+    "name": "Duangkamon THONGMEE",
+    "nation": "Thailand",
+    "age": 23,
+    "points": 152
+  },
+  {
+    "name": "Nicha PRASOETSRI",
+    "nation": "Thailand",
+    "age": 21,
+    "points": 151
+  },
+  {
+    "name": "Taylor WOLCOTT",
+    "nation": "United States",
+    "age": 21,
+    "points": 146
+  },
+  {
+    "name": "Baylie KORTMAN",
+    "nation": "United States",
+    "age": 23,
+    "points": 139
+  },
+  {
+    "name": "Elga KHARISMA NOVANDA",
+    "nation": "Indonesia",
+    "age": 21,
+    "points": 138
+  },
+  {
+    "name": "Abbie TAYLOR",
+    "nation": "Great Britain",
+    "age": 21,
+    "points": 135
+  },
+  {
+    "name": "Marine LACOSTE",
+    "nation": "France",
+    "age": 19,
+    "points": 128
+  },
+  {
+    "name": "Leanna CURTIS",
+    "nation": "Australia",
+    "age": 21,
+    "points": 126
+  },
+  {
+    "name": "Ashley VERHAGEN",
+    "nation": "United States",
+    "age": 23,
+    "points": 124
+  },
+  {
+    "name": "Nutsuda WONGWAI",
+    "nation": "Thailand",
+    "age": 24,
+    "points": 124
+  },
+  {
+    "name": "Keely KORTMAN",
+    "nation": "United States",
+    "age": 21,
+    "points": 114
+  },
+  {
+    "name": "Daniëlle VRENEGOOR",
+    "nation": "Netherlands",
+    "age": 20,
+    "points": 110
+  },
+  {
+    "name": "Yana EGOROVA",
+    "nation": "Russia",
+    "age": 19,
+    "points": 110
+  },
+  {
+    "name": "Carley YOUNG",
+    "nation": "United States",
+    "age": 30,
+    "points": 102
+  },
+  {
+    "name": "Estefany GOMEZ ECHEVERRY",
+    "nation": "Colombia",
+    "age": 23,
+    "points": 99
+  },
+  {
+    "name": "Manuela VALENCIA ALZATE",
+    "nation": "Colombia",
+    "age": 19,
+    "points": 95
+  },
+  {
+    "name": "Cassidy MONAGHAN",
+    "nation": "Canada",
+    "age": 20,
+    "points": 94
+  },
+  {
+    "name": "Laura Daniela RONCANCIO PINILLA",
+    "nation": "Colombia",
+    "age": 19,
+    "points": 86
+  },
+  {
+    "name": "Hayley GEDYE",
+    "nation": "New Zealand",
+    "age": 21,
+    "points": 85
+  },
+  {
+    "name": "Sabrina MILLMAN",
+    "nation": "Canada",
+    "age": 21,
+    "points": 80
+  },
+  {
+    "name": "Catherine HOPKINS",
+    "nation": "Australia",
+    "age": 25,
+    "points": 76
+  },
+  {
+    "name": "Leticia MARTINS ALVES PEREIRA",
+    "nation": "Brazil",
+    "age": 21,
+    "points": 76
+  },
+  {
+    "name": "Miki IIBATA",
+    "nation": "Japan",
+    "age": 29,
+    "points": 76
+  },
+  {
+    "name": "Leigh BOONE",
+    "nation": "United States",
+    "age": 41,
+    "points": 60
+  }
+]

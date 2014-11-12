@@ -1,15 +1,12 @@
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio">
+<section id="portfolio"  ng-controller="RiderListCtrl">
     <div class="container">
         <div class="row margin_b40">
-            <div class="col-md-3">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <div class="col-md-6"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
-            <div class="col-md-2 col-md-offset-1">
-                <div class="dropdown pull-right">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            <div class="col-sm-12 col-md-4 search_cont">
+                <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
+                <div class="dropdown pull-left">
+                  <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     Sort by
                     <span class="caret"></span>
                   </button>
@@ -21,17 +18,23 @@
                   </ul>
                 </div>
             </div>
+            <div class="col-sm-12 col-md-4"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
+            <div class="col-sm-12 col-md-4 ">
+                <button class="btn btn-primary pull-right margin_l10">Submit</button>
+                
+            </div>
             <div class="col-md-12 text-center">
-                <p>Hover over the rider to rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
+                <p>Rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
                 
             </div>
             
         </div>
         <div class="row">
-            {% for rider in site.data.riders %}
-                <div class="col-sm-6 col-md-3 portfolio-item">
-                    <div class="rider_card">
-                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+            {% raw %}
+
+                <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="rider in riders | filter:matchesQuery">
+                    <div class="rider_card" >
+                        <a href="#portfolioModal-" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <ul class="rank_list">
@@ -45,18 +48,21 @@
                             </div>
                             <div class="row rider">
                                 <i class="fa fa-user fa-5x col-md-4"></i>
-                                <div class="col-md-8">
+                                <div class="col-md-8 ">
                                     <p>Age: {{rider.age}}</p>
                                     <p>Points: {{rider.points}}</p>
+                                    <p>{{rider.nation}}</p>
                                 </div>
                                 <h3  class="col-md-12">{{rider.name}}</h3>
+                                
                             </div>
+                            
                             
 
                         </a>
                     </div>
                 </div>
-            {% endfor %}
+            {% endraw %}
         </div>
     </div>
 </section>
