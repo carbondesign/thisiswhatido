@@ -1,7 +1,7 @@
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio" ng-controller="RecipeListCtrl">
-    <div class="container">
+    <div class="container recipe">
         <div class="row">
             <div class="col-md-4 search_cont">
                 <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
@@ -44,7 +44,7 @@
 
             {% raw  %}
             <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes | filter:matchesQuery">
-                <div class="rider_card">
+                <div class="recipe_card">
                         
                         <div class="">
                             <img src="{{recipe.imageUrlsBySize.90}}">

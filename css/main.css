@@ -463,15 +463,16 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.rider_card{
+.rider_card, .recipe_card{
     margin: 0px ;
     border: thin solid #666;
     
     height:200px;
 }
+.recipe_card{padding:10px;}
 .rider{padding: 10px;}
-.rider_card h3{font-size: 1.2em; clear:both;margin-top: 10px}
-.rider_card p{font-size: 1em; margin-left: 10px; margin-bottom: 3px}
+.rider_card h3, .recipe_card h3{font-size: 1.2em; clear:both;margin-top: 10px}
+.rider_card p,.recipe_card p{font-size: 1em; margin-left: 10px; margin-bottom: 3px}
 .rank{
     border: thin solid #eee;
     border-radius: 100%;
