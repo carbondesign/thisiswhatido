@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <p>Pick the top five riders in order and win a bottle of Bonanza Bob's Best BBQ Sauce!</p>
+                <p>Hover over the rider to rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
                 
             </div>
             
@@ -34,17 +34,24 @@
                         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-2x"></i>
+                                    <ul class="rank_list">
+                                        <li class="rank">1</li>
+                                        <li class="rank">2</li>
+                                        <li class="rank">3</li>
+                                        <li class="rank">4</li>
+                                        <li class="rank">5</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row rider">
                                 <i class="fa fa-user fa-5x col-md-4"></i>
                                 <div class="col-md-8">
                                     <p>Age: {{rider.age}}</p>
                                     <p>Points: {{rider.points}}</p>
                                 </div>
+                                <h3  class="col-md-12">{{rider.name}}</h3>
                             </div>
-                            <h3>{{rider.name}}</h3>
+                            
 
                         </a>
                     </div>

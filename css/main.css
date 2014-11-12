@@ -211,17 +211,19 @@ section.success {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    height:180px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 40px;
     opacity: 0;
     background: rgba(24,24,24,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    bottom:-18px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -311,7 +313,6 @@ border-color: #666;
     font-size: .85em;
     line-height: 1.764705882em;
     vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0;
     -webkit-transition: top .3s ease,opacity .3s ease;
     -moz-transition: top .3s ease,opacity .3s ease;
@@ -459,9 +460,25 @@ footer .footer-below {
 .rider_card{
     margin: 0px ;
     border: thin solid #666;
-    padding: 10px;
+    
     height:200px;
 }
+.rider{padding: 10px;}
 .rider_card h3{font-size: 1.2em; clear:both;margin-top: 10px}
 .rider_card p{font-size: 1em; margin-left: 10px}
+.rank{
+    border: thin solid #eee;
+    border-radius: 100%;
+    padding: 1px 0px;
+    float: left;
+    list-style: none;
+    margin-right: 14px;
+    font-size: .85em;
+    height: 30px;
+    width: 30px;
+}
+.rank_list{
+    margin-left: -13px;
+    margin-top: -3px;
+}
 
