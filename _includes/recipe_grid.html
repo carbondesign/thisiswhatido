@@ -1,0 +1,29 @@
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" ng-controller="RecipeListCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Recipes</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="row">
+
+                {% raw  %}
+                <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="recipe in recipes">
+                    <div class="rider_card">
+                            
+                            <div class="">
+                                <img src="{{recipe.imageUrlsBySize.90}}">
+                                <p></p>
+                                <h3>{{recipe.recipeName}}</h3>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+                {% endraw  %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+# Site settings
+title: BMX Bonaza
+email: leigh765@me.com
+description: "Bob's BBQ is proud to support the first annual BMX Bonaza."
+twitter_username: bobsbbqbmx
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty

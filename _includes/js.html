@@ -1,0 +1,62 @@
+ <!-- jQuery Version 1.11.0 -->
+    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ "/js/freelancer.js" | prepend: site.baseurl }}"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    
+    <script type="text/javascript">
+        // $.ajax({
+        //   url: "http://api.yummly.com/v1/api/recipes?_app_id=67b68cf2&_app_key=80bd18008bb922c1f15bb7f554018383&q=bbq&requirePictures=true", 
+        //   context: document.body,
+        //   complete: function(data){console.log("done")},
+        //   success: function(data){
+        //     var recipe = data.matches;
+        //     //console.log(recipe);
+        //     $.each(recipe, function(key, value) {
+        //        /// do stuff with key and value
+        //       console.log(value["recipeName"])
+        //     });
+        //   }
+        // });
+
+    </script>
+    <script>
+    angular.module('bikes_bbq',[]).filter('matchesQuery', function(){
+        return function(items, query){
+            var alternate = query.replace(/ /g,"_").toLowerCase();
+            var lcQuery = query.toLowerCase();
+            var arrayToReturn = [];        
+            for (var i=0; i<items.length; i++){
+                if (items[i].title.toLowerCase().indexOf(lcQuery) !== -1 
+                               || items[i].words.indexOf(alternate) !== -1) {
+                    arrayToReturn.push(items[i]);
+                }
+            }
+            return arrayToReturn;
+        };
+    });
+
+    function RecipeListCtrl($scope, $http) {
+      $scope.query = "";
+      $scope.recipes = [];
+      var url = "http://api.yummly.com/v1/api/recipes?_app_id=67b68cf2&_app_key=80bd18008bb922c1f15bb7f554018383&q=bbq&excludedIngredient[]=watermelon&requirePictures=true&maxResult=200" + "&callback=JSON_CALLBACK";
+      $http.jsonp(url).success(function(data) {
+        
+        $scope.recipes = data.matches;
+        console.log($scope.recipes)
+      });
+    }
+    </script>

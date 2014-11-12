@@ -1,0 +1,53 @@
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <div class="col-md-4 text-center">
+                <h2>Riders</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-md-4">
+                <div class="dropdown pull-right">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Sort by
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Age</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Points</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Last Name</a></li>
+                    
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for rider in site.data.riders %}
+                <div class="col-sm-6 col-md-3 portfolio-item">
+                    <div class="rider_card">
+                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-user fa-5x col-md-4"></i>
+                                <div class="col-md-8">
+                                    <p>Age: {{rider.age}}</p>
+                                    <p>Points: {{rider.points}}</p>
+                                </div>
+                            </div>
+                            <h3>{{rider.name}}</h3>
+
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
