@@ -39,7 +39,7 @@
                                 <div class="caption-content">
                                     <ul class="rank_list" >
                                        
-                                        <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index)"><span >{{$index + 1}}</span></li>
+                                        <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index); disabletest = 'true'" ng-class="{disabled: disabletest} "><span >{{$index + 1}}</span></li>
                                      
                                     </ul>
                                 </div>
@@ -64,4 +64,5 @@
             {% endraw %}
         </div>
     </div>
+      {% include modals.html %}
 </section>

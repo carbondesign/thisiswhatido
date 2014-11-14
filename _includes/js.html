@@ -81,17 +81,19 @@
         
       }
       $scope.selected_riders = [
-          { place : "1st" , riderID : 3 },
+          { place : "1st" , riderID : "" },
           { place : "2nd", riderID: "" },
           { place : "3rd", riderID : "" },
           { place : "4th" , riderID : "" },
           { place : "5th", riderID : "" }
       ];
-      $scope.setPlace = function(place){
-        console.log(this.rider.id);
-        // console.log(place);
+      $scope.setPlace = function(place){       
         $scope.selected_riders[place].riderID = this.rider.id;
-        // selected_riders
+        console.log(this.$parent);
+        
+      }
+      $scope.showName = function(riderid){
+        return $scope.riders[riderid-1].name
       }
       
       

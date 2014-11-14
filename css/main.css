@@ -7,6 +7,7 @@
 
 .margin_b40{margin-bottom: 40px}
 .margin_l10{margin-left: 10px}
+.padding_l20{padding-left:20px;}
 .relative{position: relative;}
 body {
     overflow-x: hidden;
@@ -484,6 +485,7 @@ footer .footer-below {
     height: 30px;
     width: 28px;
 }
+.rank.disabled{border: thin solid #666;color:#666;}
 .rank.selected, .rank.selected:hover{
     color:#666;
     border-color:#666;

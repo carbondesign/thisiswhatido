@@ -1,6 +1,6 @@
  <!-- Portfolio Modals -->
 
-    <div class="portfolio-modal modal fade" id="submit_rank" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="submit_rank" role="dialog" aria-hidden="true" >
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -15,6 +15,20 @@
                             <h2>Your Contact Information</h2>
                             <hr class="star-primary">
                             <p class="margin_b40">Please provide your contact information so we can contact you if you win!</p>
+                            {% raw %}
+                            <div class="panel panel-default">
+                                <div class=" panel-body">
+                                    <h4 class="text-left padding_l20">Your selections</h4>
+                                <ul class="text-left ">
+                                    <li>First:{{showName(selected_riders[0].riderID)}}</li> 
+                                    <li>Second: {{showName(selected_riders[1].riderID)}}</li> 
+                                    <li>Third: {{showName(selected_riders[2].riderID)}}</li> 
+                                    <li>Fourth: {{showName(selected_riders[3].riderID)}}</li> 
+                                    <li>Fifth: {{showName(selected_riders[4].riderID)}}</li>
+                                </ul>
+                                </div>
+                            </div>
+                            {% endraw %}
                             <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
