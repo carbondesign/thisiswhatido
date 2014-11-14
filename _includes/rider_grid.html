@@ -31,22 +31,20 @@
         </div>
         <div class="row">
             {% raw %}
-
+                {{selected_riders}}
                 <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="rider in riders | filter:matchesQuery">
                     <div class="rider_card" >
                         <a href="#portfolioModal-" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <ul class="rank_list">
-                                        <li class="rank selected">1</li>
-                                        <li class="rank">2</li>
-                                        <li class="rank">3</li>
-                                        <li class="rank">4</li>
-                                        <li class="rank">5</li>
+                                    <ul class="rank_list" >
+                                       
+                                        <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index)"><span >{{$index + 1}}</span></li>
+                                     
                                     </ul>
                                 </div>
                             </div>
-                            <div class="rider_place hidden" ng-class= "{ranked: $index==0}">1st Place</div>
+                            <div class="rider_place hidden" ng-class= "setclass(rider.id)">Your choice for <span>1st</span> Place</div>
                             <div class="row rider">
                                 <i class="fa fa-user fa-5x col-md-4"></i>
                                 <div class="col-md-8 ">

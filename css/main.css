@@ -513,13 +513,14 @@ footer .footer-below {
 #portfolio .search_cont .dropdown-menu{z-index:4;}
 .race_details{background-color: #fff; padding: 20px}
 .map{overflow: hidden;height:540px; padding-top: 60px}
-.hidden.ranked{
+.hidden.first, .hidden.second, .hidden.third, .hidden.fourth,.hidden.fifth{
     display: block !important;
     visibility: visible !important;
-    background: #666;
+    background-color: #666;
     color: white;
     padding: 10px 10px;
     position: absolute;
     width: 100%;
     bottom: -18px;
 }
+

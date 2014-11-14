@@ -70,8 +70,29 @@
       $http.get(url).success(function(data) {
         
         $scope.riders = data;
-        console.log($scope.riders)
+        // console.log($scope.riders)
       });
+      $scope.setclass = function(riderid){
+        if(riderid == $scope.selected_riders[0].riderID){return "first"};
+        if(riderid == $scope.selected_riders[1].riderID){return "second"};
+        if(riderid == $scope.selected_riders[2].riderID){return "third"};
+        if(riderid == $scope.selected_riders[3].riderID){return "fourth"};
+        if(riderid == $scope.selected_riders[4].riderID){return "fifth"};
+        
+      }
+      $scope.selected_riders = [
+          { place : "1st" , riderID : 3 },
+          { place : "2nd", riderID: "" },
+          { place : "3rd", riderID : "" },
+          { place : "4th" , riderID : "" },
+          { place : "5th", riderID : "" }
+      ];
+      $scope.setPlace = function(place){
+        console.log(this.rider.id);
+        // console.log(place);
+        $scope.selected_riders[place].riderID = this.rider.id;
+        // selected_riders
+      }
       
       
     });
