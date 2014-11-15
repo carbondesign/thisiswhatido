@@ -30,7 +30,7 @@ description: The description of the project
 View this prototype [here](https://carbondesign.github.io/thisiswhatido)
 
 ## Screenshot
-![screenshot](https://raw.github.com/carbondesign/thisiswhatido/master/screenshot.png)
+![screenshot](https://raw.github.com/carbondesign/thisiswhatido/gh-pages/screenshot.png)
 
 =========
 For more details, read [documentation](http://jekyllrb.com/)
