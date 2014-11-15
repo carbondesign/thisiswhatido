@@ -1,8 +1,7 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+---
+---
+$desk: min-width:768px;
+$tab: max-width:768px;
 /*helper classes*/
 
 .margin_b40{margin-bottom: 40px}
@@ -117,7 +116,7 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:768px) {
+@media($tab) {
     header .container {
         padding-top: 200px;
         padding-bottom: 100px;
@@ -132,7 +131,7 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
+@media($tab) {
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -204,19 +203,19 @@ section.success {
 }
 
 #portfolio .portfolio-item {
+    .portfolio-link {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        
+        height:180px;
+    }
     right: 0;
     margin: 0 0 15px;
     
 }
-#portfolio .portfolio-item{}
 
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    
-    height:180px;
-}
+
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
@@ -473,7 +472,7 @@ footer .footer-below {
 .recipe_card{padding:10px;}
 .rider{padding: 10px;}
 .rider_card h3, .recipe_card h3{font-size: 1.2em; clear:both;margin-top: 10px}
-.rider_card p,.recipe_card p{font-size: 1em; margin-left: 10px; margin-bottom: 3px}
+.rider_card p,.recipe_card p{font-size: 1em;  margin-bottom: 3px}
 .rank{
     border: thin solid #eee;
     border-radius: 100%;
