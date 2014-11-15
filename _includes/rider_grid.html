@@ -1,6 +1,6 @@
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio"  ng-controller="RiderListCtrl">
+<section id="card_grid"  ng-controller="RiderListCtrl">
     <div class="container">
         <div class="row margin_b40">
             <div class="col-sm-12 col-md-4 search_cont">
@@ -32,9 +32,9 @@
         <div class="row">
             {% raw %}
                
-                <div class="col-sm-6 col-md-3 portfolio-item" ng-repeat="rider in riders | filter:matchesQuery">
-                    <div class="rider_card" >
-                        <a href="#portfolioModal-" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-6 col-md-3 grid-item" ng-repeat="rider in riders | filter:matchesQuery">
+                    <div class="grid_card" >
+                        <a href="#gridModal-" class="grid-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <ul class="rank_list" >
