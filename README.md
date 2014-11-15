@@ -11,6 +11,11 @@ This prototype uses 2 sources of data:
 ## Demo
 View this prototype [here](https://carbondesign.github.io/thisiswhatido)
 
+## Process Boards
+Process boards help me track where I am. I have two versions. One that is focussed on my tasks and on that is shows the different phases of the project:
+- https://trello.com/b/w7CblBOi/this-is-what-i-do
+- https://trello.com/b/cmMu9Ekr/alternate-process-board
+
 ## Screenshot
 ![screenshot](https://raw.github.com/carbondesign/thisiswhatido/gh-pages/screenshot.png)
 
