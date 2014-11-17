@@ -48,7 +48,10 @@
         
         $scope.recipes = data.matches;
         
-      });
+      }).error(function(data, status) {
+          $scope.data = data || "Request failed";
+          $scope.status = status;
+      });;
     });
     App.controller('RiderListCtrl', function ($scope, $http) {
      
