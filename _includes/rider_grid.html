@@ -20,7 +20,7 @@
             </div>
             <div class="col-sm-12 col-md-4"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
             <div class="col-sm-12 col-md-4 ">
-                <button class="btn btn-primary pull-right margin_l10"  data-toggle="modal" data-target="#submit_rank">Submit</button>
+                <button class="btn btn-primary pull-right margin_l10 rider_submit"  data-toggle="modal" data-target="#submit_rank">Submit</button>
                 
             </div>
             <div class="col-md-12 text-center">
@@ -45,15 +45,16 @@
                                 </div>
                             </div>
                             <div class="rider_place hidden" ng-class= "setclass(rider.id)">Your choice for <span>nth</span> Place</div>
-                            <div class="row rider">
-                                <i class="fa fa-user fa-5x col-xs-1 col-md-4"></i>
-                                <div class=" col-xs-3 col-md-8 ">
+                            <div class="row ">
+                                <i class="fa fa-user fa-5x col-xs-4 col-md-4"></i>
+                                <div class=" col-xs-8 col-md-8 ">
+
                                     <p>Age: {{rider.age}}</p>
                                     <p>Points: {{rider.points}}</p>
                                     <p>{{rider.nation}}</p>
                                 </div>
-                          
-                                <h3 class="col-xs-4 col-md-12">{{rider.name}}</h3>
+                                <hr class="clearfix">
+                                <h3 class="col-xs-12 col-md-12">{{rider.name}}</h3>
                                 <p class="col-xs-4 col-md-12">Favorite Bonanza Bob's recipe: </p>
                                 <div  class="col-xs-4 col-md-12" ng-controller="RecipeListCtrl"><p>{{recipes[rider.id].recipeName}}</p></div>
                                 

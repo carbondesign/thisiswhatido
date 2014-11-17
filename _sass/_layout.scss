@@ -112,12 +112,24 @@ header {
 
     header .intro-text .name {
         font-size: 4.75em;
+        
+            .small{
+                font-size: .5em;
+            }
+       
     }
 
     header .intro-text .skills {
         font-size: 1.75em;
     }
 }
+@media($tab) {
+    header .intro-text .name .small{
+                font-size: .7em;
+            }
+     section .container h2{font-size: 2em; clear:both;}
+}
+
 
 @media($desk) {
     .navbar-fixed-top {

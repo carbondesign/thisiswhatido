@@ -1,8 +1,9 @@
 ---
 ---
-$desk: "min-width:768px";
-$tab: "max-width:768px";
+$desk: "min-width:990px";
+$tab: "max-width:990px";
 /*helper classes*/
+
 
 @import "helpers";
 @import "layout";
@@ -34,10 +35,16 @@ $tab: "max-width:768px";
 .rank_list{
     margin-left: -13px;
     margin-top: 5px;
+    @media($tab){
+        margin-left: -28px;
+        li{
+            margin-bottom: 7px;
+        }
+    }
 }
 .rank_list li:hover{
-    color:cadetblue;
-    border-color:cadetblue;
+    color:tomato;
+    border-color:tomato;
 }
 
 .hidden.first, .hidden.second, .hidden.third, .hidden.fourth,.hidden.fifth{

@@ -17,12 +17,12 @@
                   </ul>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-xs-12 col-md-4 text-center">
                 <h2>Recipes</h2>
                 <hr class="star-primary">
             </div>
-            <div class="col-md-4 ">
-                <div class="btn-group pull-right" data-toggle="buttons">
+            <div class="col-xs-12 col-md-4 ">
+                <div class="btn-group pull-right sort_group " data-toggle="buttons">
                   
                   <label class="btn btn-primary">
                     <input type="checkbox" autocomplete="off"> Chicken
@@ -39,7 +39,7 @@
                  
                 </div>
             </div>
-            <div class="col-md-12 text-center">
+            <div class="col-xs-12 col-md-12 text-center">
                 <p class="margin_b40">While your here, take some time to explore some of Bonanza Bob's Best recipes. </strong></p>
                 
             </div>
@@ -49,12 +49,18 @@
             {% raw  %}
             <div class="col-sm-6 col-md-3 grid-item" ng-repeat="recipe in recipes | filter:matchesQuery">
                 <div class="grid_card">
-                        
-                        <div class="">
-                            <img src="{{recipe.imageUrlsBySize.90}}">
-                            <p class="pull-right">{{recipe.rating}}</p>
-                            <h3>{{recipe.recipeName}}</h3>
-                        </div>
+                         <a href="#gridModal-" class="grid-link" data-toggle="modal">
+                          <div class="row">
+                            <div class=" col-xs-3 col-md-8 ">
+                              <img src="{{recipe.imageUrlsBySize.90}}">
+                              <p class="pull-right">{{recipe.rating}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <h3  class="col-md-12">{{recipe.recipeName}}</h3>
+                          </div>
+                        </a>
+                      
 
                     </a>
                 </div>
