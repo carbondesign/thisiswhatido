@@ -7,9 +7,9 @@
     transition: all .3s ease-in-out;
 }
 .btn-success {
-color: #ffffff;
-background-color: #666;
-border-color: #666;
+    color: #ffffff;
+    background-color: #666;
+    border-color: #666;
 }
 
 .btn-outline:hover,
@@ -20,8 +20,6 @@ border-color: #666;
     color: #18bc9c;
     background: #fff;
 }
-
-
 
 .floating-label-form-group {
     position: relative;
@@ -78,8 +76,6 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
-
-
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -99,7 +95,6 @@ form .row:first-child .floating-label-form-group {
 .sort_group   {
     @media($tab){
             float: none !important;
-            /* text-align: center; */
             margin: 10px auto 40px;
             display: block;
             width: 294px;
@@ -135,17 +130,21 @@ form .row:first-child .floating-label-form-group {
 .search{width: 60%;
     @media($tab){
         width:80%;
-        margin-bottom:20px 
+        margin-bottom:20px; 
     }
 }
 .search_cont .dropdown{
-        @media($tab){width:20%;}
-        button {
-            @media($tab){width:100%;}
+    @media($tab){width:20%;}
+
+    button {
+        @media($tab){width:100%;}
     }
 
 } 
-.search.form-control:focus{border: 2px solid #dce4ec;border-right: none;}
+.search.form-control:focus{
+    border: 2px solid #dce4ec;
+    border-right: none;
+}
 .sort{
     background-color: white;
     color: #2c3e50;
