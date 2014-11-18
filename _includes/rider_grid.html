@@ -1,0 +1,72 @@
+
+<!-- Portfolio Grid Section -->
+<section id="card_grid"  ng-controller="RiderListCtrl">
+    <div class="container">
+        <div class="row margin_b40">
+            <div class="col-sm-12 col-md-4 search_cont">
+                <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
+                <div class="dropdown pull-left">
+                  <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Sort by
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'age'">Age</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'points'">Points</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'name'">Last Name</a></li>
+                    
+                  </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
+            <div class="col-sm-12 col-md-4 ">
+                <button class="btn btn-primary pull-right margin_l10 rider_submit"  data-toggle="modal" data-target="#submit_rank">Submit</button>
+                
+            </div>
+            <div class="col-md-12 text-center">
+                <p>Rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
+                
+            </div>
+            
+        </div>
+        <div class="row">
+            {% raw %}
+               
+                <div class="col-sm-6 col-md-3 grid-item" ng-repeat="rider in riders | filter:matchesQuery | orderBy:predicate">
+                    <div class="grid_card" >
+                        <a href="#gridModal-" class="grid-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <ul class="rank_list" >
+                                       
+                                        <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index); disabletest = 'true'" ng-class="{disabled: disabletest} "><span >{{$index + 1}}</span></li>
+                                     
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rider_place hidden" ng-class= "setclass(rider.id)">Your choice for <span>nth</span> Place</div>
+                            <div class="row ">
+                                <i class="fa fa-user fa-5x col-xs-4 col-md-4"></i>
+                                <div class=" col-xs-8 col-md-8 ">
+
+                                    <p>Age: {{rider.age}}</p>
+                                    <p>Points: {{rider.points}}</p>
+                                    <p>{{rider.nation}}</p>
+                                </div>
+                                <hr class="clearfix">
+                                <h3 class="col-xs-12 col-md-12">{{rider.name}}</h3>
+                                <p class="col-xs-4 col-md-12">Favorite Bonanza Bob's recipe: </p>
+                                <div  class="col-xs-4 col-md-12" ng-controller="RecipeListCtrl"><p>{{recipes[rider.id].recipeName}}</p></div>
+                                
+                            </div>
+                            
+                            
+
+                        </a>
+                    </div>
+                </div>
+            {% endraw %}
+        </div>
+    </div>
+      {% include modals.html %}
+</section>
