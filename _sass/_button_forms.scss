@@ -89,7 +89,7 @@ form .row:first-child .floating-label-form-group {
 .btn.active {
     outline: 0;
 }
-.sort_group {
+.sort_group   {
     @media($tab){
             float: none !important;
             margin: 10px auto 40px;
@@ -102,6 +102,7 @@ form .row:first-child .floating-label-form-group {
     width: 100%;
     margin-bottom: 40px;
     overflow: hidden;
+    float:none !important;
 }
 
 
