@@ -96,20 +96,20 @@ form .row:first-child .floating-label-form-group {
 .btn.active {
     outline: 0;
 }
-.sort_group    {
+.sort_group   {
     @media($tab){
             float: none !important;
             /* text-align: center; */
             margin: 10px auto 40px;
             display: block;
             width: 294px;
-            height: 44px;}
+            height: 44px;
     }
+}
 .btn-primary.rider_submit{
     width: 100%;
     margin-bottom: 40px;
     overflow: hidden;
-
 }
 .scroll-top {
     z-index: 1049;
@@ -140,8 +140,11 @@ form .row:first-child .floating-label-form-group {
 }
 .search_cont .dropdown{
         @media($tab){width:20%;}
-        button {@media($tab){width:100%;}}
-    } 
+        button {
+            @media($tab){width:100%;}
+    }
+
+} 
 .search.form-control:focus{border: 2px solid #dce4ec;border-right: none;}
 .sort{
     background-color: white;
@@ -155,3 +158,4 @@ form .row:first-child .floating-label-form-group {
     border-right: none;
 }
 #card_grid .search_cont .dropdown-menu{z-index:4;}
+
