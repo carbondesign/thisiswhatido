@@ -1,6 +1,7 @@
 # Site settings
 
-title: BMX Bonaza
+title: BMX Bash
+
 email: leigh765@me.com
 description: "Bob's BBQ is proud to support the first annual BMX Bonaza."
 twitter_username: bobsbbqbmx
@@ -13,3 +14,4 @@ baseurl: http://carbondesign.github.io/thisiswhatido/
 # Build settings
 markdown: kramdown
 permalink: pretty
+

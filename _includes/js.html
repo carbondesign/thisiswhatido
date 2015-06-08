@@ -15,7 +15,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/freelancer.js" | prepend: site.baseurl }}"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     
     <script type="text/javascript">
        
@@ -57,33 +57,59 @@
     App.controller('RiderListCtrl', function ($scope, $http) {
      
       $scope.riders = [];
+      $scope.showhide = false;
       
       var url = "{{site.url}}/data/riders.json";
       $http.get(url).success(function(data) {
         
         $scope.riders = data;
-        // console.log($scope.riders)
+        
       });
-      $scope.setclass = function(riderid){
-        if(riderid == $scope.selected_riders[0].riderID){return "first"};
-        if(riderid == $scope.selected_riders[1].riderID){return "second"};
-        if(riderid == $scope.selected_riders[2].riderID){return "third"};
-        if(riderid == $scope.selected_riders[3].riderID){return "fourth"};
-        if(riderid == $scope.selected_riders[4].riderID){return "fifth"};
-        
-      }
+      
       $scope.selected_riders = [
-          { place : "1st" , riderID : "" },
-          { place : "2nd", riderID: "" },
-          { place : "3rd", riderID : "" },
-          { place : "4th" , riderID : "" },
-          { place : "5th", riderID : "" }
+          { place : "1st" , riderID : null, classname : "first" },
+          { place : "2nd", riderID: null, classname : "second" },
+          { place : "3rd", riderID : null, classname : "third" },
+          { place : "4th" , riderID : null, classname : "fourth" },
+          { place : "5th", riderID : null, classname : "fifth" }
       ];
-      $scope.setPlace = function(place){       
+      $scope.setPlace = function(place){ 
+        var index = this.rider.id-1;
+        $scope.riders[index].rank = place;
         $scope.selected_riders[place].riderID = this.rider.id;
-       
-        
+        this.rider.rank = $scope.selected_riders[place];
+
       }
+
+      $scope.ageRange = [{
+          text : "All",
+          classname : "showall",
+          min : 0,
+          max : 50
+        },{
+          text : "18–20",
+          classname : "showjunior",
+          min : 0,
+          max : 20
+        },{
+          text : "21-30",
+          classname : "showtwenties",
+          min : 21,
+          max : 30
+        },{
+          text : "31–40",
+          classname : "showthirties",
+          min : 31,
+          max : 41
+        },{
+          text : "41–50",
+          classname : "showfourties",
+          min : 41,
+          max : 50
+        }];
+      $scope.selectedAge = $scope.ageRange[0];
+
+      
 
       
       
