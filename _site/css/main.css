@@ -2,14 +2,32 @@
 .margin_b40 {
   margin-bottom: 40px; }
 
+.margin_t40 {
+  margin-top: 40px; }
+
+.margin_b20 {
+  margin-bottom: 20px; }
+
+.margin_t20 {
+  margin-top: 20px; }
+
 .margin_l10 {
   margin-left: 10px; }
+
+.margin_r10 {
+  margin-right: 10px; }
 
 .padding_l20 {
   padding-left: 20px; }
 
 .relative {
   position: relative; }
+
+.pro::before {
+  content: "\f005";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 14px; }
 
 body {
   overflow-x: hidden;
@@ -30,7 +48,7 @@ a:focus,
 a:active,
 a.active {
   outline: 0;
-  color: #ccc; }
+  color: #666; }
 
 h1,
 h2,
@@ -295,7 +313,7 @@ footer {
   -ms-transition: top .3s ease,opacity .3s ease;
   transition: top .3s ease,opacity .3s ease; }
 
-.floating-label-form-group::not(:first-child) {
+.floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #eee; }
 
@@ -327,7 +345,6 @@ form .row:first-child .floating-label-form-group {
 @media (max-width: 990px) {
   .sort_group {
     float: none !important;
-    /* text-align: center; */
     margin: 10px auto 40px;
     display: block;
     width: 294px;
@@ -336,7 +353,8 @@ form .row:first-child .floating-label-form-group {
 .btn-primary.rider_submit {
   width: 100%;
   margin-bottom: 40px;
-  overflow: hidden; }
+  overflow: hidden;
+  float: none !important; }
 
 .scroll-top {
   z-index: 1049;
@@ -357,7 +375,7 @@ form .row:first-child .floating-label-form-group {
   outline: 0; }
 
 .search {
-  width: 60%; }
+  width: 300px; }
   @media (max-width: 990px) {
     .search {
       width: 80%;
@@ -371,22 +389,23 @@ form .row:first-child .floating-label-form-group {
     width: 100%; } }
 
 .search.form-control:focus {
-  border: 2px solid #dce4ec;
-  border-right: none; }
+  border: 2px solid #dce4ec; }
 
 .sort {
   background-color: white;
   color: #2c3e50;
   border: 2px solid #dce4ec;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 4px;
   padding-top: 8px; }
 
 .withsort {
-  border-radius: 4px 0px  0px 4px;
-  border-right: none; }
+  border-radius: 4px; }
 
 #card_grid .search_cont .dropdown-menu {
-  z-index: 4; }
+  z-index: 4000; }
+
+.navbar-brand {
+  color: white; }
 
 .portfolio-modal .modal-content {
   padding: 100px 0;

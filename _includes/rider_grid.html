@@ -2,84 +2,102 @@
 <!-- Portfolio Grid Section -->
 <section id="card_grid"  ng-controller="RiderListCtrl">
     <div class="container">
-        <div class="row margin_b40">
-            <div class="col-sm-12 col-md-4 search_cont">
-                <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
-                <div class="dropdown pull-left">
-                  <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        <div class="row margin_b20">
+            
+            <div class="col-sm-12 col-md-4 col-md-offset-4"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
 
-                    Filters
+            <div class="col-sm-12 col-md-2 col-md-offset-2  ">
 
-                    <span class="caret"></span>
-                  </button>
-                  <div class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                  </div>
-                  <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu2" data-toggle="dropdown">
+        <button class="btn btn-primary pull-right margin_l10 rider_submit"  data-toggle="modal" data-target="#submit_rank">Submit</button>
+
+    </div>
+    <div class="row ">
+        <p class="col-md-12 text-center ">Rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
+
+    </div>
+    <div class="col-sm-12 search_cont margin_t20">
+        
+        <div class="">
+            <hr class="clearfix">
+            <div class="dropdown pull-left">
+                <button class="btn btn-default dropdown-toggle sort margin_r10" type="button" id="dropdownMenu1" data-toggle="dropdown">
 
                     Sort by:
 
                     <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'age'">Age</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'points'">Points</a></li>
 
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'name'">First Name</a></li>
-                    
-                  </ul>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4"><h2 class="text-center">Riders</h2><hr class="star-primary"></div>
 
-            <div class="col-sm-12 col-md-3 col-md-offset-1  ">
+                </ul>
 
-                <button class="btn btn-primary pull-right margin_l10 rider_submit"  data-toggle="modal" data-target="#submit_rank">Submit</button>
-                
             </div>
-            <div class="col-md-12 text-center">
-                <p>Rank the top five riders you think will win the race on December 7, 2014.<br>If you are the closest to the final results you'll win a bottle of <strong>Bonanza Bob's Best BBQ Sauce!</strong></p>
-                
+            <div class="dropdown pull-left">
+                Age Range: 
+                <select ng-model="selectedAge" ng-options="item.text for item in ageRange"></select>
+
             </div>
-            
+            <!-- ng-show and ng-hide directive  -->
+            <a ng-click="showhide = !showhide" ng-hide="showhide" class="pull-left"><i class="fa fa-eye-slash margin_r10 margin_l10"></i>Hide Unranked Riders</a>
+            <a ng-click="showhide = !showhide" ng-show="showhide" class="pull-left">
+                <i class="fa fa-eye margin_r10 margin_l10"></i>Show All Riders
+            </a>
+            <input type="text" class="form-control search withsort pull-right" placeholder="Search" ng-model="matchesQuery">
         </div>
-        <div class="row">
-            {% raw %}
-               
-                <div class="col-sm-6 col-md-3 grid-item" ng-repeat="rider in riders | filter:matchesQuery | orderBy:predicate">
-                    <div class="grid_card" >
-                        <a href="#gridModal-" class="grid-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <ul class="rank_list" >
-                                       
-                                        <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index); disabletest = 'true'" ng-class="{disabled: disabletest} "><span >{{$index + 1}}</span></li>
-                                     
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="rider_place hidden" ng-class= "setclass(rider.id)">Your choice for <span>nth</span> Place</div>
-                            <div class="row ">
-                                <i class="fa fa-user fa-5x col-xs-4 col-md-4"></i>
-                                <div class=" col-xs-8 col-md-8 ">
+        
+    </div>
 
-                                    <p>Age: {{rider.age}}</p>
-                                    <p>Points: {{rider.points}}</p>
-                                    <p>{{rider.nation}}</p>
-                                </div>
-                                <hr class="clearfix">
-                                <h3 class="col-xs-12 col-md-12">{{rider.name}}</h3>
-                                <p class="col-xs-4 col-md-12">Favorite Bonanza Bob's recipe: </p>
-                                <div  class="col-xs-4 col-md-12" ng-controller="RecipeListCtrl"><p>{{recipes[rider.id].recipeName}}</p></div>
-                                
-                            </div>
-                            
-                            
+</div>
+<div class="row">
+    {% raw %}
 
-                        </a>
+    <!-- IF TRUE OR FALSE: ternary the option for either-or class -->
+    <!-- ng-class inside of a regular class -->
+    <div 
+        class="col-sm-6 col-md-3 grid-item {{selectedAge.classname}}" 
+        ng-class="rider.rank === null &&  showhide ? 'hide' : 'show' "
+        ng-repeat="rider in riders | filter:matchesQuery | orderBy:predicate"
+        >
+        <!-- IF TRUE: object that can create multiple classes-->
+        <div 
+            class="grid_card" 
+            ng-class="{'pro' : rider.points > 1000, 'junior' : rider.age <= 20, 'twenties' : rider.age > 20 && rider.age <= 30, 'thirties' : rider.age > 30 && rider.age <= 40, 'fourties' : rider.age > 40 && rider.age <= 50}">
+            <a href="#gridModal-" class="grid-link" data-toggle="modal">
+                <div class="caption">
+                    <div class="caption-content">
+                        <ul class="rank_list" >
+
+                            <li ng-repeat="place in selected_riders"  class="rank" ng-click="setPlace($index)"><span >{{$index + 1}}</span></li>
+
+                        </ul>
                     </div>
                 </div>
-            {% endraw %}
+                <div class="rider_place hidden" ng-class="rider.rank.classname">Your choice for <span>{{rider.rank.place}}</span> Place</div>
+                <div class="row ">
+                    <i class="fa fa-user fa-5x col-xs-4 col-md-4"></i>
+                    <div class=" col-xs-8 col-md-8 ">
+
+                        <p>Age: {{rider.age}}</p>
+                        <p>Points: {{rider.points}}</p>
+                        <p>{{rider.nation}}</p>
+                    </div>
+                    <hr class="clearfix">
+                    <h3 class="col-xs-12 col-md-12">{{rider.name}}</h3>
+                    <p class="col-xs-4 col-md-12">Favorite Bonanza Bob's recipe: </p>
+                    <div  class="col-xs-4 col-md-12" ng-controller="RecipeListCtrl"><p>{{recipes[rider.id].recipeName}}</p></div>
+
+                </div>
+
+
+
+            </a>
         </div>
     </div>
-      {% include modals.html %}
+    {% endraw %}
+</div>
+</div>
+{% include modals.html %}
 </section>

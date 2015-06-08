@@ -8,7 +8,19 @@
             height:200px;
             position: relative;
             @media($tab){margin-bottom: 20px}
-
+            
+            // &.junior .grid-link{
+            //     h3 {color:#96AB7F}
+            // }
+            // &.twenties .grid-link{
+            //     h3 {color:#CBB581}
+            // }
+            // &.thirties .grid-link{
+            //     h3 {color:#BC8B7E}
+            // }
+            // &.fourties .grid-link{
+            //     h3 {color:#9D81C1}
+            // }
             .grid-link{
                 color:#888;
                 h3{
@@ -63,12 +75,6 @@
     }
     
 }
-
-
-
-
-
-
 
 
 

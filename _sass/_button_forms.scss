@@ -58,14 +58,11 @@
     transition: top .3s ease,opacity .3s ease;
 }
 
-<<<<<<< HEAD
-.floating-label-form-group::not(:first-child) {
+.floating-label-form-group:not(:first-child) {
     padding-left: 14px;
     border-left: 1px solid #eee;
 }
-=======
 
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
 
 .floating-label-form-group-with-value label {
     top: 0;
@@ -80,11 +77,7 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -101,17 +94,7 @@ form .row:first-child .floating-label-form-group {
 .btn.active {
     outline: 0;
 }
-<<<<<<< HEAD
-.sort_group    {
-    @media($tab){
-            float: none !important;
-            /* text-align: center; */
-            margin: 10px auto 40px;
-            display: block;
-            width: 294px;
-            height: 44px;}
-    }
-=======
+
 .sort_group   {
     @media($tab){
             float: none !important;
@@ -121,21 +104,15 @@ form .row:first-child .floating-label-form-group {
             height: 44px;
     }
 }
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
 .btn-primary.rider_submit{
     width: 100%;
     margin-bottom: 40px;
     overflow: hidden;
-<<<<<<< HEAD
-
-}
-=======
     float:none !important;
 }
 
 
 
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
 .scroll-top {
     z-index: 1049;
     position: fixed;
@@ -157,49 +134,39 @@ form .row:first-child .floating-label-form-group {
     outline: 0;
 }
 
-.search{width: 60%;
+.search{width: 300px;
     @media($tab){
         width:80%;
-<<<<<<< HEAD
-        margin-bottom:20px 
-    }
-}
-.search_cont .dropdown{
-        @media($tab){width:20%;}
-        button {@media($tab){width:100%;}}
-    } 
-.search.form-control:focus{border: 2px solid #dce4ec;border-right: none;}
-=======
+
         margin-bottom:20px; 
     }
 }
-.search_cont .dropdown{
-    @media($tab){width:20%;}
+.search_cont {
+    .dropdown{
+        @media($tab){width:20%;}
 
-    button {
-        @media($tab){width:100%;}
-    }
+        button {
+            @media($tab){width:100%;}
+        }
 
-} 
+    } 
+}
+    
 .search.form-control:focus{
     border: 2px solid #dce4ec;
-    border-right: none;
+    
 }
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
 .sort{
     background-color: white;
     color: #2c3e50;
     border: 2px solid #dce4ec;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 4px;
     padding-top: 8px;
 }
 .withsort{
-    border-radius: 4px 0px  0px 4px;
-    border-right: none;
+    border-radius:4px;
+    
 }
-<<<<<<< HEAD
-#card_grid .search_cont .dropdown-menu{z-index:4;}
-=======
-#card_grid .search_cont .dropdown-menu{z-index:4;}
 
->>>>>>> c3f526a6787fdf347ba562167691bae86bfe650d
+#card_grid .search_cont .dropdown-menu{z-index:4000;}
+
