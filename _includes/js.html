@@ -25,6 +25,7 @@
     var App = angular.module('bikes_bbq', []);
     
     App.filter('matchesQuery', function(){
+
         return function(items, query){
             var alternate = query.replace(/ /g,"_").toLowerCase();
             var lcQuery = query.toLowerCase();
@@ -87,4 +88,5 @@
       
       
     });
+
     </script>

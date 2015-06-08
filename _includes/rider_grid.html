@@ -7,6 +7,7 @@
                 <input type="text" class="form-control search withsort pull-left" placeholder="Search" ng-model="matchesQuery">
                 <div class="dropdown pull-left">
                   <button class="btn btn-default dropdown-toggle sort" type="button" id="dropdownMenu1" data-toggle="dropdown">
+
                     Sort by
                     <span class="caret"></span>
                   </button>
@@ -14,6 +15,7 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'age'">Age</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'points'">Points</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="predicate = 'name'">Last Name</a></li>
+
                     
                   </ul>
                 </div>
@@ -62,11 +64,14 @@
                             
                             
 
+
                         </a>
                     </div>
                 </div>
+
             {% endraw %}
         </div>
     </div>
       {% include modals.html %}
+
 </section>
